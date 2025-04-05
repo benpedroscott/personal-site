@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25vw;
+  width: 15vw;
   height: 100svh;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -17,10 +17,10 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
 }
 
 .list {
-  border-right: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,4 +40,36 @@ button {
   letter-spacing: 0.5px;
   padding: unset;
   margin: 2px 0px;
+  color: white;
+  min-width: 160px;
+  transition: padding-left .1s ease-in;
+}
+
+button:hover {
+  padding-left: 5px;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.wrapper {
+  border-right: 0.5px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.bg {
+  height: 100svh;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.0) 100%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  mask-image: linear-gradient(0.25turn, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(0.25turn, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
 }

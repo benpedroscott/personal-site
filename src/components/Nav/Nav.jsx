@@ -10,14 +10,19 @@ function Nav({ entryRefs, data }) {
   return (
     <nav className={styles.main}>
       <div className={styles.list}>
+      <div className={styles.bg}></div>
+      <div className={styles.wrapper}>
         <h3 className={styles.title}>Navigation</h3>
-        {data.map((entry, index) => {
-          return (
-            <button key={entry.id} onClick={() => handleScrollToPage(index)}>
-              {entry.nav_name}
-            </button>
-          );
-        })}
+
+          {data.map((entry, index) => {
+            return (
+              <button key={entry.id} onClick={() => handleScrollToPage(index)}>
+                {entry.nav_name}
+              </button>
+            );
+          })}
+        </div>
+
       </div>
     </nav>
   );

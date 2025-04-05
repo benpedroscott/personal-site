@@ -14,11 +14,18 @@ function App() {
   return (
     <div className={styles.root}>
       <Nav entryRefs={entryRefs} data={data} />
+
       <section className={styles.main}>
         {data.map((entry, index) => {
           return (
             <EntryContainer key={entry.id} ref={entryRefs[index]} data={entry}>
-              <Background />
+              <Background>
+                {entry.bg === "video" ? 
+                   <video src="src\assets\ants2.mp4" autoPlay loop></video> :
+                  null
+                }
+                
+              </Background>   
               <Hed>{entry.hed}</Hed>
             </EntryContainer>
           );
