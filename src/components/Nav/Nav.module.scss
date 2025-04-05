@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 100svh;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  text-align: left;
+  margin: 10px 0px;
+  font-family: "Noto Serif";
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list {
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+button {
+  border: none;
+  background-color: unset;
+  text-align: left;
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: unset;
+  margin: 2px 0px;
+}
