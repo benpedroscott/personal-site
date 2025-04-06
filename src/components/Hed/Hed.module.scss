@@ -1,9 +1,6 @@
 @import "../../globals.scss";
 
 .hed {
-  position: absolute;
-  top: 10%;
-  left: 20%;
   font-family: "Times New Roman";
   font-weight: 300;
   font-size: 35px;
@@ -11,6 +8,8 @@
   text-align: left;
   color: white;
   max-width: 500px;
-  letter-spacing: 2px;
-  line-height: 1.6;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  text-transform:capitalize ;
+  margin: 20px 0px;
 }

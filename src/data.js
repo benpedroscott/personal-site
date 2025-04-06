@@ -5,6 +5,7 @@ export const data = [
     hed: "These are the five most dangerous asteroids",
     link: "www.google.com",
     bg: "video",
+    asset: "ast.mp4"
   },
   {
     id: crypto.randomUUID(),
@@ -12,6 +13,7 @@ export const data = [
     hed: "Build your very own seashell",
     link: "www.google.com",
     bg: "video",
+    asset: "shells.mp4"
   },
   {
     id: crypto.randomUUID(),
@@ -19,6 +21,7 @@ export const data = [
     hed: "Watch this massive ant colony survive a year of challenges",
     link: "www.google.com",
     bg: "video",
+    asset: "ants.mp4"
   },
   {
     id: crypto.randomUUID(),

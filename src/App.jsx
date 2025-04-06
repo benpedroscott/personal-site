@@ -21,12 +21,16 @@ function App() {
             <EntryContainer key={entry.id} ref={entryRefs[index]} data={entry}>
               <Background>
                 {entry.bg === "video" ? 
-                   <video src="src\assets\ants2.mp4" autoPlay loop></video> :
+                   <video src={`src/assets/${entry.asset}`} autoPlay loop></video> :
                   null
                 }
                 
-              </Background>   
-              <Hed>{entry.hed}</Hed>
+              </Background>
+              <div className={styles.hedContainer}>   
+                <Hed>{entry.hed}</Hed>
+                <button className={styles.storyButton} onClick={() => {window.location.href="http://www.google.com"}}>Read the story</button>
+                <button className={styles.storyButton} onClick={() => {console.log("clicked")}}>Behind the scenes</button>
+              </div>
             </EntryContainer>
           );
         })}
