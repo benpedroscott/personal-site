@@ -12,7 +12,7 @@
     width: 20vw;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     visibility: hidden;
   }
 }
@@ -27,7 +27,7 @@
   left: 20px;
   min-width: unset !important;
 
-  @media (max-width: 759px) {
+  @media (max-width: 800px) {
     visibility: visible;
   }
 }

@@ -18,6 +18,12 @@
     :last-child {
       margin-left: 5px;
     }
+
+    @media (max-width: 800px) {
+      transform: translateX(-50%);
+      left: 50%;
+      width: 90%;
+    }
   }
 
   .storyButton {
@@ -30,5 +36,4 @@
   .storyButton:hover {
     background-color: rgb(66, 66, 66);
   }
-
 }
