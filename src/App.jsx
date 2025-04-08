@@ -72,7 +72,7 @@ function App() {
                     </Dek>
                   </>
                 ) : null}
-                {entry.bts ? (
+                {/* {entry.bts ? (
                   <button
                     style={{
                       border: `1px solid ${entry.textColor}`,
@@ -85,7 +85,7 @@ function App() {
                   >
                     Behind the scenes
                   </button>
-                ) : null}
+                ) : null} */}
               </div>
             </EntryContainer>
           );

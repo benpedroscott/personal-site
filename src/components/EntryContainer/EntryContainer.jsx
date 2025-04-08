@@ -21,11 +21,9 @@ const EntryContainer = React.forwardRef((props, ref) => {
   );
 
   React.useEffect(() => {
-    console.log(inView);
     if (inView) {
       let newState = props.index;
       props.setState(newState);
-      console.log(newState);
     }
   }, [inView, props]);
 
