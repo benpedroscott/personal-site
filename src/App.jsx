@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./App.module.scss";
-import LandingPage from "./components/LandingPage/LandingPage";
 import Nav from "./components/Nav/Nav";
 import EntryContainer from "./components/EntryContainer/EntryContainer";
 import Hed from "./components/Hed/Hed";
