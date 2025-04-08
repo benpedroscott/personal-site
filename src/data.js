@@ -1,6 +1,14 @@
 export const data = [
   {
     id: crypto.randomUUID(),
+    nav_name: "About Me",
+    hed: "Ben Scott",
+    bg: "video",
+    // asset: "ast.mp4",
+    textColor: "black",
+  },
+  {
+    id: crypto.randomUUID(),
     nav_name: "Near-Earth Asteroids",
     hed: "These are the five most dangerous asteroids",
     link: "https://www.nationalgeographic.com/premium/graphics/five-asteroids-could-hit-earth",
