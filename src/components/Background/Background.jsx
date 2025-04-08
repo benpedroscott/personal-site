@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./Background.module.scss";
 
-function Background({ children }) {
+function Background({ data, children }) {
   return (
-    <div className={styles.bg}>
+    <div
+      style={data.bgColor ? { backgroundColor: data.bgColor } : null}
+      className={styles.bg}
+    >
       {children}
     </div>
   );

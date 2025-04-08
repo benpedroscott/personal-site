@@ -1,13 +1,13 @@
 .bg {
   overflow-x: hidden;
   height: 100svh;
-  background-color: rgb(219, 248, 171);
-  position: relative;   
+  // background-color: rgb(219, 248, 171);
+  position: relative;
   z-index: -1;
   right: 0px;
 
   width: 100%;
-  
+
   video {
     object-fit: cover;
     min-height: 100svh;
