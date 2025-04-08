@@ -22,7 +22,9 @@ function App() {
               <Background>
                 {entry.bg === "video" ? 
                    <video src={`src/assets/${entry.asset}`} autoPlay loop></video> :
-                  null
+                  entry.bg === "image" ?
+                    <img src= {`src/assets/${entry.asset}`}></img> : 
+                    null
                 }
                 
               </Background>

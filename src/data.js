@@ -29,6 +29,7 @@ export const data = [
     hed: "Step inside this ancient mummification workshop",
     link: "www.google.com",
     bg: "image",
+    asset: "mummy.jpg"
   },
   {
     id: crypto.randomUUID(),
@@ -36,6 +37,7 @@ export const data = [
     hed: "Explore Camp Century, a Cold War-era military base buried in the Greeland icecap",
     link: "www.google.com",
     bg: "image",
+    asset: "poy.png"
   },
   {
     id: crypto.randomUUID(),
@@ -43,6 +45,7 @@ export const data = [
     hed: "A visual guide of NASA's plan for returning to the moon",
     link: "www.google.com",
     bg: "image",
+    asset: "poy.png"
   },
   {
     id: crypto.randomUUID(),
@@ -50,6 +53,7 @@ export const data = [
     hed: "Why do deer shed their antlers annually?",
     link: "www.google.com",
     bg: "image",
+    asset: "poy.png"
   },
   {
     id: crypto.randomUUID(),
@@ -57,6 +61,7 @@ export const data = [
     hed: "Smaller families, starting Later: the drop of fertility rates in the US",
     link: "www.google.com",
     bg: "image",
+    asset: "birth.jpg"
   },
   {
     id: crypto.randomUUID(),
@@ -64,5 +69,6 @@ export const data = [
     hed: "National Geographic's Pictures of the Year 2023",
     link: "www.google.com",
     bg: "image",
+    asset: "poy.png"
   },
 ];
