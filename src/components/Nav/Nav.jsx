@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Nav.module.scss";
+import menuIcon from "../../assets/menu.svg";
 
 function Nav({ entryRefs, data, state }) {
   React.useEffect(() => {}, [state]);
@@ -45,6 +46,7 @@ function Nav({ entryRefs, data, state }) {
                   style={state === index ? activeItem : inactiveItem}
                   key={entry.id}
                   onClick={() => handleScrollToPage(index)}
+                  className={styles.navButton}
                 >
                   {entry.nav_name}
                 </button>
@@ -60,7 +62,7 @@ function Nav({ entryRefs, data, state }) {
 function Hamburger() {
   return (
     <button className={styles.hamburger} onClick={console.log("called")}>
-      <img src={"src/assets/menu.svg"} />
+      <img src={menuIcon} />
     </button>
   );
 }

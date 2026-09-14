@@ -4,6 +4,7 @@
   min-height: 100svh;
   align-items: center;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   flex: 0 0 100%;
   width:100vw;
 }

@@ -1,0 +1,145 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 100vw;
+  position: relative;
+  box-sizing: border-box;
+  padding: 7vh 8vw;
+  background: linear-gradient(165deg, #f8f4e6 0%, #e6f0f7 40%, #f4efe8 100%);
+  overflow-y: auto;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #222;
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.kicker {
+  margin: 0;
+  font-family: "Noto Serif";
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 13px;
+  color: #4a5560;
+}
+
+.hed {
+  margin: 8px 0 18px;
+  font-family: "Merriweather";
+  font-size: clamp(34px, 4.2vw, 60px);
+  line-height: 1.05;
+  color: #16202a;
+}
+
+.dek {
+  margin: 0 0 12px;
+  font-family: "Merriweather";
+  font-size: 21px;
+  line-height: 1.5;
+  color: #26313d;
+}
+
+.dekHtml {
+  margin: 0 0 12px;
+  font-family: "Merriweather";
+  font-size: 21px;
+  line-height: 1.5;
+  color: #26313d;
+}
+
+.dekHtml :global(img) {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px 0 16px;
+  border-radius: 4px;
+}
+
+.inlineFigure {
+  margin: 10px 0 16px;
+}
+
+.inlineFigure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.imageCaption {
+  margin: 8px 0 0;
+  font-family: "Noto Serif";
+  font-size: 14px;
+  line-height: 1.35;
+  color: #4a5560;
+}
+
+.returnButton {
+  margin-top: 18px;
+  border: 2px solid #16202a;
+  background: #16202a;
+  color: #f9f7f2;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-family: "Noto Serif";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.embedWrap {
+  margin: 26px 0 10px;
+  background-color: transparent;
+}
+
+.embedWrap blockquote {
+  margin: 0;
+}
+
+.embedWrap :global(.tiktok-embed) {
+  background: transparent !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+.embedWrap :global(.tiktok-embed iframe) {
+  background: transparent !important;
+  margin: 0px !important;
+  padding: 0px;
+  width: fit-content;
+}
+
+.returnButton:hover,
+.closeButton:hover {
+  cursor: pointer;
+  filter: brightness(0.92);
+}
+
+@media (max-width: 800px) {
+  .root {
+    padding: 9vh 7vw 6vh;
+  }
+
+  .dek {
+    font-size: 18px;
+  }
+}
